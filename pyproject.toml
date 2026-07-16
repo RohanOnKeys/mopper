@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mopper"
+version = "0.1.1"
+description = "A small, fast, AST-based Python linter with zero runtime dependencies."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Rohan" }]
+keywords = ["linter", "static-analysis", "ast", "cli"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.scripts]
+mopper = "mopper.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/RohanOnKeys/mopper"
+Issues = "https://github.com/RohanOnKeys/mopper/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mopper"]
