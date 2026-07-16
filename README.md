@@ -1,10 +1,5 @@
 # mopper
 
-[![PyPI](https://img.shields.io/pypi/v/mopper)](https://pypi.org/project/mopper/)
-[![Python](https://img.shields.io/pypi/pyversions/mopper)](https://pypi.org/project/mopper/)
-[![License](https://img.shields.io/github/license/RohanOnKeys/mopper)](LICENSE)
-[![CI](https://img.shields.io/github/actions/workflow/status/RohanOnKeys/mopper/publish.yml?label=CI)](https://github.com/RohanOnKeys/mopper/actions)
-
 A lightweight Python linter built on the standard library's `ast` module, with **zero runtime dependencies**.
 
 `mopper` doesn't aim to replace tools like Flake8 or Pylint. Instead, it focuses on a small set of practical checks that catch common mistakes such as unused imports, mutable default arguments, bare `except` clauses, unreachable code, and more.
